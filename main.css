@@ -1,0 +1,99 @@
+p {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button-blue {
+    color: white;
+    display: inline-block;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    align-self: flex-end;
+
+
+}
+
+.card-stav {
+    align-self: flex-start;
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prise {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-popis {
+    overflow: hidden;
+    color: #656565;
+    max-height: 66px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+
+
+.stav {
+    margin: 0px;
+}
+
+.prise {
+    margin: 0px;
+}
+
+
+.card{
+    padding: 32px 24px 24px 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    .products {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        padding: 32px 12px 12px 12px;
+    }
+    }
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .button-blue{
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    }
+
+}
