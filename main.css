@@ -11,6 +11,8 @@ img {
     max-height: 100%;
     display: block;
     object-fit: cover;
+    margin: 0 auto;
+
 }
 
 .products {
@@ -66,15 +68,65 @@ img {
 }
 
 
-.card{
+.card {
     padding: 32px 24px 24px 24px;
+    border: 1px solid #e0e0e0;
+
 }
+
+.auktualnistav {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: green;
+}
+
+.obrazek {
+    position: relative;
+}
+
+.badges-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    z-index: 10;
+    color: white;
+
+}
+
+.badge-green {
+    background-color: #6fb92b;
+}
+
+.badge-black {
+    background-color: #1a1a1a;
+}
+
+.badge-orange {
+    background-color: #f38200;
+}
+
+.badge {
+    font-size: clamp(9px, 1.5vw, 14px);
+
+
+    padding: clamp(2px, 0.5vw, 5px) clamp(5px, 1vw, 10px);
+
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 2px;
+}
+
 
 @media screen and (min-width: 1200px) {
     .products {
         display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 
 }
@@ -83,7 +135,7 @@ img {
     .card {
         padding: 32px 12px 12px 12px;
     }
-    }
+}
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
     .card-info {
@@ -92,10 +144,11 @@ img {
         width: 100%;
         flex-wrap: nowrap;
     }
-    .button-blue{
-    display: flex;
-    align-self: stretch;
-    justify-content: center;
+
+    .button-blue {
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
     }
 
 }
