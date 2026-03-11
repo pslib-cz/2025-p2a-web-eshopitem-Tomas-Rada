@@ -1,0 +1,154 @@
+p {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button-blue {
+    color: white;
+    display: inline-block;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    align-self: flex-end;
+
+
+}
+
+.card-stav {
+    align-self: flex-start;
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prise {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-popis {
+    overflow: hidden;
+    color: #656565;
+    max-height: 66px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+
+
+.stav {
+    margin: 0px;
+}
+
+.prise {
+    margin: 0px;
+}
+
+
+.card {
+    padding: 32px 24px 24px 24px;
+    border: 1px solid #e0e0e0;
+
+}
+
+.auktualnistav {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: green;
+}
+
+.obrazek {
+    position: relative;
+}
+
+.badges-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    z-index: 10;
+    color: white;
+
+}
+
+.badge-green {
+    background-color: #6fb92b;
+}
+
+.badge-black {
+    background-color: #1a1a1a;
+}
+
+.badge-orange {
+    background-color: #f38200;
+}
+
+.badge {
+    font-size: clamp(9px, 1.5vw, 14px);
+
+
+    padding: clamp(2px, 0.5vw, 5px) clamp(5px, 1vw, 10px);
+
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 2px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        padding: 32px 12px 12px 12px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .button-blue {
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
+    }
+
+}
